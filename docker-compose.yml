@@ -13,6 +13,7 @@ services:
       - database
   adminer:
     image: 'adminer'
-    ports: '50000:80'
+    ports: 
+      - '50000:80'
   custom:
     build: 'mon_image'
